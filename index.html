@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreyas Tourism Company</title>
+    <style>
+        :root{
+            --card-bg: rgba(255,255,255,0.06);
+            --caption-color: #fff;
+        }
+        *{box-sizing: border-box;}
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://images.pexels.com/photos/55787/pexels-photo-55787.jpeg?cs=srgb&dl=pexels-donaldtong94-55787.jpg&fm=jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #fff;
+        }
+
+        .main-title {
+            font-size: clamp(1.6rem, 5vw, 4rem);65465465
+            text-align: center;
+            font-weight: 800;
+            color: #fff;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+            margin: 24px 12px;
+            letter-spacing: 2px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+            justify-content: center;
+            padding: 12px;
+        }
+
+        .mountain-img-container {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 10px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+            transition: transform .25s ease, box-shadow .25s ease;
+            flex: 1 1 300px;      
+            max-width: 400px;
+            min-width: 220px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .mountain-img-container:hover {
+            transform: translateY(-6px) scale(1.02);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.45);
+        }
+
+        .mountain-img-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border: 4px solid rgba(0,0,0,0.65);
+            border-radius: 8px;
+        }
+
+        .caption {
+            margin-top: 10px;
+            color: var(--caption-color);
+            font-weight: 600;
+            font-size: 1.05rem;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .mountain-img-container { flex: 1 1 95%; max-width: 95%; }
+            .caption { font-size: 1rem; }
+        }
+
+        @media (min-width: 601px) and (max-width: 900px) {
+            .mountain-img-container { flex: 1 1 45%; max-width: 48%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-title">SHREYAS TRAVEL AGENCY</div>
+
+    <div class="gallery">
+        <div class="mountain-img-container">
+            <a href="https://www.makemytrip.com/tripideas/hills-mountains-destinations" target="_blank" rel="noopener">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqeI6rAKlhuF8agWU28bVMbvfShtX104_crQ&s" alt="mountain destination">
+            </a>
+            <div class="caption">Mountain destinations ↖</div>
+        </div>
+
+        <div class="mountain-img-container">
+            <a href="https://www.makemytrip.com/tripideas/beach-destinations" target="_blank" rel="noopener">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTahjgZSovPws-wTQ5ZyOlCM8BcO2j84GgxqQ&s" alt="beach destination">
+            </a>
+            <div class="caption">Beach destinations ↖</div>
+        </div>
+
+        <div class="mountain-img-container">
+            <a href="https://www.holidify.com/collections/deserts-in-india" target="_blank" rel="noopener">
+                <img src="https://imgcld.yatra.com/holiday-india/image/upload/t_yt_blog_c_fill_q_auto:good_f_auto_w_800_h_500/v1454390629/blog/Rajasthan_Desert_nusdqr.jpg" alt="desert destination">
+            </a>
+            <div class="caption">Desert destinations ↖</div>
+        </div>
+
+        <div class="mountain-img-container">
+            <a href="https://www.makemytrip.com/tripideas/pilgrimage-destinations" target="_blank" rel="noopener">
+                <img src="https://w0.peakpx.com/wallpaper/671/782/HD-wallpaper-golden-temple-in-amritsar-is-most-visited-religious-place-in-the-world-architectural-digest-india.jpg" alt="religious destination">
+            </a>
+            <div class="caption">Religious destinations ↖</div>
+        </div>
+
+        <div class="mountain-img-container">
+            <a href="https://www.makemytrip.com/tripideas/wildlife-destinations" target="_blank" rel="noopener">
+                <img src="https://wanderlustphotosblog.com/wp-content/uploads/2019/04/africa-2265801_960_720.webp" alt="wildlife destination">
+            </a>
+            <div class="caption">Wildlife destinations ↖</div>
+        </div>
+
+        <div class="mountain-img-container">
+            <a href="https://www.worldsbestcities.com/rankings/worlds-best-cities/" target="_blank" rel="noopener">
+                <img src="https://plus.unsplash.com/premium_photo-1661964149725-fbf14eabd38c?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZGVzdGluYXRpb258ZW58MHx8MHx8fDA%3D" alt="urban destination">
+            </a>
+            <div class="caption">Urban destinations ↖</div>
+        </div>
+    </div>
+</body>
+</html>
